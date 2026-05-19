@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    container_name: murojatbot
+    restart: unless-stopped
+    env_file:
+      - .env
+    network_mode: host
